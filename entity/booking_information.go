@@ -8,8 +8,8 @@ type Booking_Information struct {
 	PaymentStatus    string
 
 	IDPassenger *uint
-	IDPassenger Passenger `gorm:"foreignkey:IDPassenger;references:ID"`
+	Passenger Passenger `gorm:"foreignkey:IDPassenger;references:ID"`
 
 	IDTrips *uint
-	IDTrips Trips `gorm:"foreignkey:IDTrips;references:ID"`
+	Trips   Trips `gorm:"foreignkey:IDTrips;references:ID"`
 }

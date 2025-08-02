@@ -1,10 +1,8 @@
 package entity
 
-import "gorm.io/gorm"
-
 type FeedBack struct {
 
-	ID string `grom:"primarykey"`
+	ID string `gorm:"primarykey"`
 	Name string
 	Email    string
 	Phonenumber	string
